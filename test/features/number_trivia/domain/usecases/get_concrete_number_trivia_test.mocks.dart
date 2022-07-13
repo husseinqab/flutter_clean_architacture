@@ -5,7 +5,7 @@
 import 'dart:async' as _i4;
 
 import 'package:dartz/dartz.dart' as _i2;
-import 'package:flutter_clean_arch/core/failures.dart' as _i5;
+import 'package:flutter_clean_arch/core/error/failures.dart' as _i5;
 import 'package:flutter_clean_arch/features/number_trivia/domain/entities/number_trivia.dart'
     as _i6;
 import 'package:flutter_clean_arch/features/number_trivia/domain/repositories/number_trivia_repository.dart'
@@ -41,9 +41,11 @@ class MockNumberTriviaRepository extends _i1.Mock
               _FakeEither_0<_i5.Failure, _i6.NumberTrivia>())) as _i4
           .Future<_i2.Either<_i5.Failure, _i6.NumberTrivia>>);
   @override
-  _i4.Future<_i2.Either<_i5.Failure, _i6.NumberTrivia>> getRandomNumberTrivia() =>
-      (super.noSuchMethod(Invocation.method(#getRandomTrivia, []),
-          returnValue: Future<_i2.Either<_i5.Failure, _i6.NumberTrivia>>.value(
-              _FakeEither_0<_i5.Failure, _i6.NumberTrivia>())) as _i4
-          .Future<_i2.Either<_i5.Failure, _i6.NumberTrivia>>);
+  _i4.Future<_i2.Either<_i5.Failure, _i6.NumberTrivia>>
+      getRandomNumberTrivia() =>
+          (super.noSuchMethod(Invocation.method(#getRandomNumberTrivia, []),
+                  returnValue:
+                      Future<_i2.Either<_i5.Failure, _i6.NumberTrivia>>.value(
+                          _FakeEither_0<_i5.Failure, _i6.NumberTrivia>()))
+              as _i4.Future<_i2.Either<_i5.Failure, _i6.NumberTrivia>>);
 }

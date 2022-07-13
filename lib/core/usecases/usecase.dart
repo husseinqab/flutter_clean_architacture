@@ -1,6 +1,6 @@
 import 'package:dartz/dartz.dart';
 import 'package:equatable/equatable.dart';
-import 'package:flutter_clean_arch/core/failures.dart';
+import 'package:flutter_clean_arch/core/error/failures.dart';
 
 abstract class Usecase<Type,Params>{
   Future<Either<Failure,Type>> call(Params params);

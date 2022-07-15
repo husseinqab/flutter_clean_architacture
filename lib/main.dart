@@ -18,11 +18,10 @@ class MyApp extends StatelessWidget {
     return MaterialApp(
       title: 'Number Trivia',
       theme: ThemeData(
-        primaryColor: Colors.green.shade800,
-        colorScheme: ColorScheme.fromSwatch().copyWith(secondary: Colors.green.shade600)
-      ),
+          colorScheme: ColorScheme.light().copyWith(
+              primary: Colors.green.shade800,
+              secondary: Colors.green.shade600)),
       home: const NumberTriviaPage(),
     );
   }
 }
-
